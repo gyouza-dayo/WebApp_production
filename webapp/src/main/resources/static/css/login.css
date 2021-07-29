@@ -1,6 +1,45 @@
 @charset "UTF-8";
 
-p {
-	color: red;
-	background-color: #99cc00;
+* {
+	margin: 0;
+	padding: 0;
 }
+
+.header,
+.footer {
+	height: 30px;
+	background-color: #99cc00;
+	display: flex; /* 横並べ */
+	justify-content: space-between; /* 両端揃え */
+	align-items: center; /* 上下中央寄せ */
+}
+
+.header .header_title {
+	box-sizing: border-box;
+	margin: 0 0 0 15px;
+	color: #FFFFFF;
+}
+
+/* ページ構成 */
+.page_main {
+	margin: 0 15% 0 15%;
+}
+
+.page_main.img_loginTop, .page_main.login_form {
+	display: inline-block;
+}
+
+.img_loginTop {
+	width: 100px;
+	height: 100px;
+	padding: 0 50% 0 0;
+	background: url('../../images/img_top.png');
+	background-size: 100%;
+	background-position: center;
+}
+
+.login_form {
+	background-color: #444444;
+	margin: 10% 15% 10% 15%;
+}
+
