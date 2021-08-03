@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	/* 制作用プロパティ */
 	border: solid 1px red;
 }
 
@@ -10,14 +11,22 @@ html, body {
 	height: 100%;
 }
 
+body * {
+	box-sizing: border-box;
+}
+
+body, input[value], button {
+	font-family: "Meiryo UI", "Yu Gothic", "メイリオ", sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+	color: #555560;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
+	/* 本番では白を設定 */
 	background: #000;
-}
-
-body * {
-	box-sizing: border-box;
 }
 
 .main {
@@ -27,39 +36,71 @@ body * {
 	background: #FFAA00;
 }
 
-.main_body { 
+.main_body {
 	display: flex;
 	width: 80%;
 	background: #DD5555;
-	width: 80%;
 }
 
 .content {
 	display: flex;
+	justify-content: space-between;
 	padding: 50px 0;
 	flex-grow: 1;
 }
 
-.main_img {
+.main_image {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
-	background: #DDDD33;
+	/* 背景色、背景画像、繰り返しの指定、位置、サイズの指定 */
+	background: #EEEE80 url('../../images/img_top.png') no-repeat center/100%;
 }
 
-.main_img p {
-	flex-grow: 1;
-}
-
-.login_form {
+.loginform_area {
+	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-grow: 1;
 	background: #2277CC;
 }
 
-.login_form p {
-	flex-grow: 1;
+.loginform {
+	padding: 10px 10px 15px 10px;
+	background: #EEE;
+	border: solid 1px black;
+	border-radius: 15px;
+	background: #EEE;
+}
+
+.loginform p, .loginform input {
+	padding: 5px 0;
+	font-size: 0.8em;
+}
+
+.loginform input {
+	margin: 0 0 7px 0;
+	padding-left: 5px;
+}
+
+.loginform #login_id[value], .loginform #login_pass[value] {
+	color: #CCC;
+}
+
+.loginform #login_button {
+	display: block;
+	margin: 0 auto; padding : 4px 12px;
+	border-radius: 7px;
+	padding: 4px 12px;
+}
+
+#login_button {
+	color: #FFF;
+	font-size: 0.9em;
+	background: #6688FF;
+	border: 0;
 }
 
 footer {
