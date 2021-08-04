@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
+/* 制作用プロパティ */
 * {
-	margin: 0;
-	padding: 0;
-	/* 制作用プロパティ */
 	border: solid 1px red;
 }
 
@@ -91,12 +89,10 @@ body {
 
 .loginform #login_button {
 	display: block;
-	margin: 0 auto; padding : 4px 12px;
+	margin: 0 auto;
+	padding: 4px 12px;
 	border-radius: 7px;
 	padding: 4px 12px;
-}
-
-#login_button {
 	color: #FFF;
 	font-size: 0.9em;
 	background: #6688FF;
@@ -120,4 +116,62 @@ footer {
 .footer_body p {
 	margin: 0 20px;
 	color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+	/* 768px以下に適用されるCSS（タブレット用） */
+	* {
+		border: solid 1px blue;
+		/*
+		border: none;
+		*/
+	}
+	.main_body {
+		width: 100%;
+	}
+	.main_image {
+		display: none;
+	}
+	/*
+	.loginform_area {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		background: #2277CC;
+	}
+	.loginform {
+		padding: 10px 10px 15px 10px;
+		background: #EEE;
+		border: solid 1px black;
+		border-radius: 15px;
+		background: #EEE;
+	}
+	.loginform #login_button {
+	display: block;
+	margin: 0 auto;
+	padding: 4px 12px;
+	border-radius: 7px;
+	padding: 4px 12px;
+	color: #FFF;
+	font-size: 0.9em;
+	background: #6688FF;
+	border: 0;
+}
+	*/
+	.loginform_area * {
+		display: block;
+		width: 100%;
+	}
+	.loginform {
+		height: 100%;
+		width: 90%;
+		padding: 20px 0;
+		border: none;
+		border-radius: 0;
+	}
+	.loginform #login_button {
+		border-radius: 0;
+	}
 }
