@@ -66,33 +66,25 @@ body {
 }
 
 .loginform {
-	padding: 10px 10px 15px 10px;
+	padding: 10px;
 	background: #EEE;
 	border: solid 1px black;
 	border-radius: 15px;
 	background: #EEE;
 }
 
-.loginform p, .loginform input {
-	padding: 5px 0;
-	font-size: 0.8em;
-}
-
 .loginform input {
-	margin: 0 0 7px 0;
-	padding-left: 5px;
-}
-
-.loginform #login_id[value], .loginform #login_pass[value] {
+	display: block;
+	margin: 10px auto;
+	padding: 7px 0 7px 7px;
+	font-size: 0.8em;
 	color: #CCC;
 }
 
 .loginform #login_button {
 	display: block;
-	margin: 0 auto;
-	padding: 4px 12px;
-	border-radius: 7px;
-	padding: 4px 12px;
+	width: 100%;
+	border-radius: 5px;
 	color: #FFF;
 	font-size: 0.9em;
 	background: #6688FF;
@@ -133,27 +125,26 @@ footer {
 		display: none;
 	}
 	/*
-	.loginform_area {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-grow: 1;
-		background: #2277CC;
-	}
-	.loginform {
-		padding: 10px 10px 15px 10px;
-		background: #EEE;
-		border: solid 1px black;
-		border-radius: 15px;
-		background: #EEE;
-	}
-	.loginform #login_button {
+.loginform {
+	padding: 10px;
+	background: #EEE;
+	border: solid 1px black;
+	border-radius: 15px;
+	background: #EEE;
+}
+
+.loginform input {
 	display: block;
-	margin: 0 auto;
-	padding: 4px 12px;
-	border-radius: 7px;
-	padding: 4px 12px;
+	margin: 10px auto;
+	padding: 7px 0 7px 7px;
+	font-size: 0.8em;
+	color: #CCC;
+}
+
+.loginform #login_button {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
 	color: #FFF;
 	font-size: 0.9em;
 	background: #6688FF;
@@ -166,10 +157,14 @@ footer {
 	}
 	.loginform {
 		height: 100%;
-		width: 90%;
-		padding: 20px 0;
+		width: 85%;
+		padding: 30px 0;
 		border: none;
 		border-radius: 0;
+	}
+	.loginform input {
+		margin: 10px auto;
+		height: 50px;
 	}
 	.loginform #login_button {
 		border-radius: 0;
