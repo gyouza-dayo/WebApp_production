@@ -124,33 +124,6 @@ footer {
 	.main_image {
 		display: none;
 	}
-	/*
-.loginform {
-	padding: 10px;
-	background: #EEE;
-	border: solid 1px black;
-	border-radius: 15px;
-	background: #EEE;
-}
-
-.loginform input {
-	display: block;
-	margin: 10px auto;
-	padding: 7px 0 7px 7px;
-	font-size: 0.8em;
-	color: #CCC;
-}
-
-.loginform #login_button {
-	display: block;
-	width: 100%;
-	border-radius: 5px;
-	color: #FFF;
-	font-size: 0.9em;
-	background: #6688FF;
-	border: 0;
-}
-	*/
 	.loginform_area * {
 		display: block;
 		width: 100%;
@@ -161,12 +134,16 @@ footer {
 		padding: 30px 0;
 		border: none;
 		border-radius: 0;
+		background: #EEEE80 url('../../images/img_top.png') no-repeat center/100%;
 	}
 	.loginform input {
 		margin: 10px auto;
 		height: 50px;
 	}
+	.loginform #login_id, .loginform #login_pass {
+		background: rgba(255, 255, 255, 0.8);
+	}
 	.loginform #login_button {
-		border-radius: 0;
+		background: rgba(102, 136, 255, 0.8);
 	}
 }
