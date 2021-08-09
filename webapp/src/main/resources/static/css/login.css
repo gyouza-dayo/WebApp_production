@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 /* 制作用プロパティ */
+/*
 * {
 	border: solid 1px red;
 }
-
+*/
 html, body {
 	height: 100%;
 }
@@ -23,21 +24,31 @@ body, input[value], button {
 body {
 	display: flex;
 	flex-direction: column;
-	/* 本番では白を設定 */
-	background: #000;
+	/* 開発用設定 */
+	/*
+		background: #000;
+	*/
+	/* 本番設定 */
+	background: #FFF;
 }
 
 .main {
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
-	background: #FFAA00;
+	/* 開発用設定 */
+	/*
+		background: #FFAA00;
+	*/
 }
 
 .main_body {
 	display: flex;
 	width: 80%;
-	background: #DD5555;
+	/* 開発用設定 */
+	/*
+		background: #DD5555;
+	*/
 }
 
 .content {
@@ -52,8 +63,12 @@ body {
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
+	/* 開発用設定 */
+	/*
+		background: #EEEE80 url('../../images/img_top.png') no-repeat center/100%;
+	*/
 	/* 背景色、背景画像、繰り返しの指定、位置、サイズの指定 */
-	background: #EEEE80 url('../../images/img_top.png') no-repeat center/100%;
+	background: url('../../images/img_top.png') no-repeat center/100%;
 }
 
 .loginform_area {
@@ -62,23 +77,38 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
-	background: #2277CC;
+	/* 開発用設定 */
+	/*
+		background: #2277CC;
+	*/
 }
 
 .loginform {
-	padding: 10px;
-	background: #EEE;
-	border: solid 1px black;
-	border-radius: 15px;
-	background: #EEE;
+	padding: 20px 30px 15px;
+	border-radius: 30px;
+	/* 開発用設定 */
+	/*
+		background: #EEE;
+	*/
+	background: #90acdc;
+}
+
+.logo {
+	height: 25px;
+	width: 25px;
+	margin: 0 auto;
+	background: url('../../images/ic_local_cafe_white_48dp.png') no-repeat
+		center/100%;
 }
 
 .loginform input {
 	display: block;
-	margin: 10px auto;
-	padding: 7px 0 7px 7px;
+	margin: 18px auto;
+	padding: 12px;
 	font-size: 0.8em;
-	color: #CCC;
+	color: #FFF;
+	border: 0;
+	background: rgba(255, 255, 255, 0.25);
 }
 
 .loginform #login_button {
@@ -87,15 +117,18 @@ body {
 	border-radius: 5px;
 	color: #FFF;
 	font-size: 0.9em;
-	background: #6688FF;
-	border: 0;
+	background: rgba(90, 124, 200, 0.8);
+	box-shadow: 0px 5px 3px -2px rgba(100, 100, 120, 0.25);
 }
 
 footer {
 	display: flex;
 	align-items: center;
-	height: 50px;
-	background: #55DD55;
+	height: 70px;
+	/* 開発用設定 */
+	/*
+		background: #55DD55;
+	*/
 }
 
 .footer_body {
@@ -103,19 +136,22 @@ footer {
 	flex-grow: 1;
 	justify-content: flex-end;
 	align-items: center;
+	height: 38px;
+	background: rgba(120, 150, 220, 0.25);
 }
 
 .footer_body p {
 	margin: 0 20px;
 	color: #FFF;
+	font-size: 0.9em;
 }
 
 @media screen and (max-width: 768px) {
 	/* 768px以下に適用されるCSS（タブレット用） */
 	* {
-		border: solid 1px blue;
-		/*
 		border: none;
+		/*
+			border: solid 1px blue;
 		*/
 	}
 	.main_body {
@@ -132,9 +168,9 @@ footer {
 		height: 100%;
 		width: 85%;
 		padding: 30px 0;
-		border: none;
+		border: 0;
 		border-radius: 0;
-		background: #EEEE80 url('../../images/img_top.png') no-repeat center/100%;
+		background: url('../../images/img_top.png') no-repeat center/100%;
 	}
 	.loginform input {
 		margin: 10px auto;
