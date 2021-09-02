@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+	border: solid 1px red;
+}
+
+body {
+	background: #000; /*黒*/
+}
+
+.main {
+	background: #FFAA00; /**/
+}
+
+.main_body {
+	background: #DD5555; /**/
+}
+
+.content {
+	background: #DD5555; /**/
+}
+
+.main_image {
+	background: #EEEE80; /**/
+}
+
+.loginform_area {
+	background: #2277CC; /**/
+}
+
+.loginform {
+	background: #90acdc; /**/
+}
+
+footer {
+	background: #55DD55; /**/
+}
+
+.footer_body {
+	background: rgba(120, 150, 220, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+	/* 768px以下に適用されるCSS（タブレット用） */
+	* {
+		border: solid 1px blue;
+	}
+}
